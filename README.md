@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js] SMS Sender App bootstrapped with [`create-next-app`] using the Twilio API.
+With this app, users can easily input a phone number and message, and then send SMS directly using Twilio's robust messaging capabilities.
+
 
 ## Getting Started
 
@@ -16,21 +18,30 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+ - Send SMS messages to any valid phone number.
+ - Built with React for a dynamic and user-friendly interface.
+ - Integrates with the Twilio API for seamless SMS delivery.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Prerequisites
+To run this application, you'll need:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ - A Twilio account with an active SID and Auth Token.
+ - A Twilio phone number (for sending SMS).
+ - Node.js and npm (or yarn) installed on your machine.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configure Environment Variables
+Create a .env file in the root of your project and set the following environment variables with your Twilio credentials:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ - REACT_APP_TWILIO_ACCOUNT_SID=your_twilio_account_sid
+ - REACT_APP_TWILIO_AUTH_TOKEN=your_twilio_auth_token
+ - REACT_APP_TWILIO_PHONE_NUMBER=your_twilio_phone_number
+
+
+## Technologies Used
+ - React - For building the user interface.
+ - Twilio API - For handling SMS functionality.
